@@ -15,15 +15,15 @@ class NewList extends  React.Component {
         )
     }
     render() {
-        return 
-        (
+        return (
             <ul>
                 {
                     this.state.lists
-                    .map(list=><li key={list.id}>{list.name}</li>)
+                    .map(list=>
+                        <li key={list.id}>{list.name}</li>)
                 }
             </ul>
         )
-    }
+}
 }
 export default NewList;
